@@ -27,10 +27,9 @@ body, html {
   text-align: center;
   color: white; /* Ensure text visibility over the image */
   border-radius: 8px;
-  width: calc(100% - 40px); /* Adjusted width for responsiveness */
-  max-width: 600px; /* Maximum width to limit text container size */
   padding: 20px; /* Reduced padding for smaller screens */
   background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
 }
 
 h1 {
@@ -49,13 +48,17 @@ h2 {
   font-weight: 700;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .text_container {
     padding: 10px; /* Adjusted padding for smaller screens */
+    width: calc(100% - 40px); /* Adjusted width for responsiveness */
+    max-width: 600px; /* Maximum width to limit text container size */
   }
 
   h1 {
     font-size: 16px; /* Adjusted font size for smaller screens */
+    overflow: hidden;
+    white-space: wrap;
   }
 
   h2 {
